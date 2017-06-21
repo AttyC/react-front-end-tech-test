@@ -1,0 +1,187 @@
+[
+	{
+		"id": 1,
+	    "manufacturer": "Porsche",
+	    "model": "911",
+	    "price": 135000,
+	    "acceleration": "4.3",
+	    "topSpeed": "210"
+	},
+	{
+		"id": 2,
+	    "manufacturer": "Audi",
+	    "model": "R8",
+	    "price": 135000,
+	    "acceleration": "4.3",
+	    "topSpeed": "190"
+	},
+	{
+		"id": 3,
+	    "manufacturer": "Vauxhall",
+	    "model": "Corsa",
+	    "price": 12000,
+	    "acceleration": "1.3",
+	    "topSpeed": "280"
+	},
+	{
+		"id": 4,
+	    "manufacturer": "Volkswagen",
+	    "model": "Golf",
+	    "price": 16000,
+	    "acceleration": "7.2",
+	    "topSpeed": "110"
+	},
+	{
+		"id": 5,
+	    "manufacturer": "Ford",
+	    "model": "Escort",
+	    "price": 6000,
+	    "acceleration": "15.3",
+	    "topSpeed": "90"
+	},
+	{
+		"id": 6,
+	    "manufacturer": "Kia",
+	    "model": "Picanto",
+	    "price": 7000,
+	    "acceleration": "23.2",
+	    "topSpeed": "76"
+	},
+	{
+		"id": 7,
+	    "manufacturer": "Vauxhall",
+	    "model": "Astra",
+	    "price": 22000,
+	    "acceleration": "8.3",
+	    "topSpeed": "150"
+	},
+	{
+		"id": 8,
+	    "manufacturer": "Aston Martin",
+	    "model": "DB9",
+	    "price": 110000,
+	    "acceleration": "1.8",
+	    "topSpeed": "250"
+	},
+	{
+		"id": 9,
+	    "manufacturer": "Lamborghini",
+	    "model": "Aventador",
+	    "price": 250000,
+	    "acceleration": "1.3",
+	    "topSpeed": "290"
+	},
+	{
+		"id": 10,
+	    "manufacturer": "Skoda",
+	    "model": "Superb",
+	    "price": 23000,
+	    "acceleration": "8",
+	    "topSpeed": "140"
+	},
+	{
+		"id": 11,
+	    "manufacturer": "Porsche",
+	    "model": "Boxster",
+	    "price": 90000,
+	    "acceleration": "3.2",
+	    "topSpeed": "180"
+	},
+	{
+		"id": 12,
+	    "manufacturer": "Ferrari",
+	    "model": "Enzo",
+	    "price": 120000,
+	    "acceleration": "3.3",
+	    "topSpeed": "190"
+	},
+	{
+		"id": 13,
+	    "manufacturer": "Vauxhall",
+	    "model": "Ampera",
+	    "price": 36000,
+	    "acceleration": "8.5",
+	    "topSpeed": "130"
+	},
+	{
+		"id": 14,
+	    "manufacturer": "Volkswagen",
+	    "model": "Scirocco",
+	    "price": 26000,
+	    "acceleration": "9.2",
+	    "topSpeed": "160"
+	},
+	{
+		"id": 15,
+	    "manufacturer": "Ferrari",
+	    "model": "360",
+	    "price": 130000,
+	    "acceleration": "4.3",
+	    "topSpeed": "170"
+	},
+	{
+		"id": 16,
+	    "manufacturer": "Nissan",
+	    "model": "Note",
+	    "price": 7500,
+	    "acceleration": "23.7",
+	    "topSpeed": "98"
+	},
+	{
+		"id": 17,
+	    "manufacturer": "Nissan",
+	    "model": "Skyline",
+	    "price": 50000,
+	    "acceleration": "5.3",
+	    "topSpeed": "184"
+	},
+	{
+		"id": 18,
+	    "manufacturer": "Aston Martin",
+	    "model": "Vanquish",
+	    "price": 125500,
+	    "acceleration": "1.75",
+	    "topSpeed": "253"
+	},
+	{
+		"id": 19,
+	    "manufacturer": "Ford",
+	    "model": "Ka",
+	    "price": 8350,
+	    "acceleration": "16.2",
+	    "topSpeed": "94"
+	},
+	{
+		"id": 20,
+	    "manufacturer": "Ford",
+	    "model": "Fiesta",
+	    "price": 17500,
+	    "acceleration": "8",
+	    "topSpeed": "140"
+	},
+	{
+		"id": 21,
+	    "manufacturer": "Alfa Romeo",
+	    "model": "Spider",
+	    "price": 22550,
+	    "acceleration": "13.3",
+	    "topSpeed": "132"
+	},
+	{
+		"id": 22,
+	    "manufacturer": "Mini",
+	    "model": "Cooper",
+	    "price": 25600,
+	    "acceleration": "17",
+	    "topSpeed": "140"
+	},
+	{
+		"id": 23,
+	    "manufacturer": "Mini",
+	    "model": "Cooper S",
+	    "price": 29600,
+	    "acceleration": "15.7",
+	    "topSpeed": "143"
+	}
+
+]

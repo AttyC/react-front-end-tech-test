@@ -17,6 +17,7 @@ We would like you to re-create the following basket:
 * Frequent Git use with clear commit messages
 
 ## Bonus points
+
 * Accessibility considerations
 * Unit testing
 * Progressive enhancement considerations
@@ -31,7 +32,9 @@ We would like you to re-create the following basket:
 * `npm run serve` (new Terminal or cmd window)
 
 ## Available Tech
+
 The project is compiled with webpack, and out the box, you should be able to use:
+
 * SCSS
 * ES6+
 * SVG icons
@@ -45,13 +48,17 @@ If you would like to use another technology, such as Angular, feel free to tweak
 #### Am I allowed to Google stuff
 It goes without saying. Please work as you normally would during the day.
 
+
 #### Something is not working in the build
 Try to find a way to fix it, but if you're really stuck — contact the person that set up the test for you.
+
 
 #### Shall I create branches?
 If you normally work with feature branches, we would love to see usage of them. No worries if not.
 
+
 #### I'm finished early, what now?
+
 Firstly, great work. Here are some enhancements:
 
 * Add VAT calculations

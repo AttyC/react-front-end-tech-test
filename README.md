@@ -30,6 +30,7 @@ We would like you to re-create the following basket:
 * `npm install`
 * `npm start`
 * `npm run serve` (new Terminal or cmd window)
+* Open up a browser and browse to http://localhost:8080
 
 ## Available Tech
 
@@ -43,10 +44,16 @@ The project is compiled with webpack, and out the box, you should be able to use
 
 If you would like to use another technology, such as Angular, feel free to tweak the config to allow it. Just remember that we are more interested in seeing a working solution at the end of the test.
 
+Note: Any variables or mixins you define globally should also be available throughout your styles. You can thank webpack's magic for that :)
+
 ## FAQs
 
 #### Am I allowed to Google stuff
 It goes without saying. Please work as you normally would during the day.
+
+
+#### My js/styles/html doesn't seem to update
+Often it's the caching in the browser. Try hard refreshing the browser. In chrome, open the dev tools, right click on the refresh button and select *Empty Cache and Hard Reload*
 
 
 #### Something is not working in the build

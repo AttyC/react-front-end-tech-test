@@ -7,18 +7,15 @@ export default {
         options: {
           limit: 8192, // Will use file-loader over this limit
           publicPath: '/assets/',
-          name: 'images/[name].[ext]?[hash]'
+          name: 'images/[name].[ext]'
         }
       }
     },
     {
       use: {
-        loader: 'img-loader',
+        loader: 'file-loader',
         options: {
-          mozjpeg: {
-            progressive: true,
-            quality: 85
-          }
+          name: 'images/[name].[ext]'
         }
       }
     }

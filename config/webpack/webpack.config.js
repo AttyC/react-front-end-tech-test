@@ -1,13 +1,15 @@
 import path from 'path'
 import webpack from 'webpack'
+import ExtractTextPlugin from 'extract-text-webpack-plugin'
+import CleanWebpackPlugin from 'clean-webpack-plugin'
+import ManifestPlugin from 'webpack-manifest-plugin'
+import CopyWebpackPlugin from 'copy-webpack-plugin'
 import javascript from './loader-configs/javascript'
 import style from './loader-configs/style'
 import font from './loader-configs/font'
 import html from './loader-configs/html'
 import image from './loader-configs/image'
-import ExtractTextPlugin from 'extract-text-webpack-plugin'
-import CleanWebpackPlugin from 'clean-webpack-plugin'
-import ManifestPlugin from 'webpack-manifest-plugin'
+import favicon from './loader-configs/favicon'
 
 const root = process.cwd()
 
@@ -17,7 +19,7 @@ export default {
   },
 
   output: {
-    path: path.resolve(root, 'build/assets/scripts'),
+    path: path.resolve(root, 'build/assets'),
     publicPath: `/assets/`,
     filename: '[name].js'
   },
@@ -28,23 +30,28 @@ export default {
       style,
       font,
       html,
-      image
+      image,
+      favicon
     ]
   },
 
   plugins: [
     new CleanWebpackPlugin(['build'], { root }),
 
+    new CopyWebpackPlugin([{
+      from: path.resolve(root, 'src/public/index.html'),
+      to: path.resolve(root, 'build')
+    }]),
+
     new ExtractTextPlugin({
-      filename: 'styles.[chunkhash:8].css',
+      filename: 'styles.css',
       allChunks: true,
       ignoreOrder: true
     }),
 
-    // Un-comment this if you must use jake weary :(
-    // new webpack.ProvidePlugin({
-    //   $: 'jquery',
-    //   jQuery: 'jquery'
-    // })
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    })
   ]
 }

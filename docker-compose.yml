@@ -7,10 +7,8 @@ services:
         image: fe_test_image:local
         container_name: fe_test_container01
         restart: always
-        environment:
-            - APP_URL=http://localhost:3000
         ports:
-            - "3000:3000"
+            - "8080:8080"
         volumes:
             - ./:/fe-test
             - /fe-test/node_modules

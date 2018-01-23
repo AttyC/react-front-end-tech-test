@@ -1,0 +1,16 @@
+version: '3'
+services:
+    express:
+        build: 
+            context: . 
+            dockerfile: Dockerfile
+        image: fe_test_image:local
+        container_name: fe_test_container01
+        restart: always
+        environment:
+            - APP_URL=http://localhost:3000
+        ports:
+            - "3000:3000"
+        volumes:
+            - ./:/fe-test
+            - /fe-test/node_modules

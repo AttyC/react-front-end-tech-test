@@ -4,6 +4,7 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import CleanWebpackPlugin from 'clean-webpack-plugin'
 import ManifestPlugin from 'webpack-manifest-plugin'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
+import FriendlyErrorsWebpackPlugin from 'friendly-errors-webpack-plugin'
 import javascript from './loader-configs/javascript'
 import style from './loader-configs/style'
 import font from './loader-configs/font'
@@ -35,6 +36,11 @@ export default {
     ]
   },
 
+  devServer: {
+    contentBase: path.resolve(root, 'src/public'),
+    quiet: true
+  },
+
   plugins: [
     new CleanWebpackPlugin(['build'], { root }),
 
@@ -52,6 +58,8 @@ export default {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'
-    })
+    }),
+
+    new FriendlyErrorsWebpackPlugin(),
   ]
 }

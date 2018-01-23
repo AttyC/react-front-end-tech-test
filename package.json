@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "node -r babel-register node_modules/.bin/webpack --config config/webpack/webpack.config.js --colors --progress --watch",
-    "serve": "http-server build",
-    "start": "npm run compile && npm run serve"
+    "start": "node -r babel-register node_modules/.bin/webpack-dev-server --config config/webpack/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -40,6 +38,7 @@
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
+    "friendly-errors-webpack-plugin": "^1.6.1",
     "html-loader": "^0.5.1",
     "img-loader": "^2.0.0",
     "node-sass": "^4.5.3",
@@ -49,6 +48,7 @@
     "sass-resources-loader": "^1.3.1",
     "url-loader": "^0.6.1",
     "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.11.1",
     "webpack-manifest-plugin": "^1.3.2",
     "webpack-merge": "^4.1.0"
   },

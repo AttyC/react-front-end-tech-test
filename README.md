@@ -75,7 +75,6 @@ Here are some rough user stories for you to work to:
 
 * `npm install`
 * `npm start`
-* `npm run serve` (new Terminal or cmd window)
 * Open up a browser and browse to http://localhost:8080
 
 ## Available Tech

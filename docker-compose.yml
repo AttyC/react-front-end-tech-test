@@ -10,5 +10,5 @@ services:
         ports:
             - "8080:8080"
         volumes:
-            - ./:/fe-test
-            - /fe-test/node_modules
+            - ./:/fe_test
+            - /fe_test/node_modules

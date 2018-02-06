@@ -37,6 +37,7 @@ export default {
   },
 
   devServer: {
+    host: '0.0.0.0',
     contentBase: path.resolve(root, 'src/public'),
     quiet: true
   },

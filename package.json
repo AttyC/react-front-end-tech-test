@@ -4,7 +4,8 @@
   "description": "A base repository for front-end tests at MMT Digital",
   "main": "index.js",
   "scripts": {
-    "start": "node -r babel-register node_modules/webpack-dev-server/bin/webpack-dev-server.js --config config/webpack/webpack.config.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r babel-register node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --config config/webpack/webpack.config.js"
   },
   "repository": {
     "type": "git",

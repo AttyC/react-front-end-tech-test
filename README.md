@@ -71,10 +71,10 @@ Here are some rough user stories for you to work to:
 
 ## Getting started
 
-*You will need node on your machine (https://nodejs.org/en).*
+*You will need Docker on your machine (https://www.docker.com/community-edition).*
 
-* `npm install`
-* `npm start`
+* `docker-compose build`
+* `docker-compose up`
 * Open up a browser and browse to http://localhost:8080
 
 ## Available Tech

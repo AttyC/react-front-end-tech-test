@@ -81,7 +81,7 @@ If you don't want to use Docker or have a particularly old machine (pre-2010 Mac
 
 * Install Node, if you don't have it: https://nodejs.org/en
 * `npm install`
-* `npm start`
+* `npm run start-local`
 * Open up a browser and browse to http://localhost:8080
 
 ## Available Tech
@@ -109,7 +109,7 @@ Often it's the caching in the browser. Try hard refreshing the browser. In chrom
 
 
 #### Something is not working in the build
-Try to find a way to fix it, but if you're really stuck — contact the person that set up the test for you.
+Try to find a way to fix it, but if you're really stuck ï¿½ contact the person that set up the test for you.
 
 
 #### Shall I create branches?

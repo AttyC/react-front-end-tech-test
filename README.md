@@ -81,7 +81,7 @@ If you don't want to use Docker or have a particularly old machine (pre-2010 Mac
 
 * Install Node, if you don't have it: https://nodejs.org/en
 * `npm install`
-* `npm run start-local`
+* `npm start`
 * Open up a browser and browse to http://localhost:8080
 
 ## Available Tech

@@ -71,10 +71,17 @@ Here are some rough user stories for you to work to:
 
 ## Getting started
 
-*You will need Docker on your machine (https://www.docker.com/community-edition).*
+The easiest way to start the project is using Docker. You can install it here, if you don't already have it: https://www.docker.com/community-edition.
 
 * `docker-compose build`
 * `docker-compose up`
+* Open up a browser and browse to http://localhost:8080
+
+If you don't want to use Docker or have a particularly old machine (pre-2010 Mac or pre-Windows 10 PC), you can manually run the project:
+
+* Install Node, if you don't have it: https://nodejs.org/en
+* `npm install`
+* `npm start`
 * Open up a browser and browse to http://localhost:8080
 
 ## Available Tech
@@ -102,7 +109,7 @@ Often it's the caching in the browser. Try hard refreshing the browser. In chrom
 
 
 #### Something is not working in the build
-Try to find a way to fix it, but if you're really stuck â€” contact the person that set up the test for you.
+Try to find a way to fix it, but if you're really stuck — contact the person that set up the test for you.
 
 
 #### Shall I create branches?

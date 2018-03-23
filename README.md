@@ -1,6 +1,8 @@
 # MMT Digital Front-end Test
 
-Welcome to the MMT Digital Front-end test. This test will hopefully give you a chance to showcase your skills as a developer. You get **1.5 hours** to complete the test. After the test, we will ask you to talk through your code and decisions. Alright, let's do this!
+Welcome to the MMT Digital Front-end test. This test will hopefully give you a chance to showcase your skills as a developer. The challenge is pretty straightforward - it’s possible to finish this in around two hours. However, we don't mind anything up to 1-2 days (please track how much time you spend working on this).
+
+Once you're done and have committed/pushed your implementation, please email me to let me know you're done (`tim.r@mmtdigital.co.uk`). After the test, we'll invite you in to talk through your code and decisions. Alright, let's do this!
 
 ## The challenge
 
@@ -105,11 +107,11 @@ It goes without saying. Please work as you normally would during the day.
 
 
 #### My js/styles/html doesn't seem to update
-Often it's the caching in the browser. Try hard refreshing the browser. In chrome, open the dev tools, right click on the refresh button and select *Empty Cache and Hard Reload*
+Often it's the caching in the browser. Try hard refreshing the browser. In Chrome, open the dev tools, right click on the refresh button and select *Empty Cache and Hard Reload*
 
 
 #### Something is not working in the build
-Try to find a way to fix it, but if you're really stuck � contact the person that set up the test for you.
+Try to find a way to fix it, but if you're really stuck - contact the person that set up the test for you.
 
 
 #### Shall I create branches?

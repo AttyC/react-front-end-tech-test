@@ -1,5 +1,8 @@
 import '@assets/favicon.ico'
 import '@styles/styles.scss'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Basket from './components/Basket'
 
 /**
  * Welcome! This project has been setup with webpack to — hopefully —
@@ -23,12 +26,12 @@ import trump from '@images/trump.jpg'
  * the code below to get started...
  */
 
-import React from 'react'
-import ReactDOM from 'react-dom'
 
 class App extends React.Component {
   render() {
-    return <div>React app...</div>
+    return (<div>Basket...  <Basket /></div>
+
+  )
   }
 }
 

@@ -6,32 +6,33 @@ class Item extends React.Component {
     super(props);
 
     this.state = {
-      quantity: 0,
-      resetQuantity: false
+      quantity: this.props.quantity
     };
 
-     this.handleUpdateQuantity = this.handleUpdateQuantity.bind(this);
-     this.handleResetQuantity = this.handleResetQuantity.bind(this);
+    this.updateQuantity = this.updateQuantity.bind(this);
+    this.resetQuantity = this.resetQuantity.bind(this);
   }
 
-  handleUpdateQuantity(event){
+  updateQuantity = event => {
     this.setState({
       quantity: Number(event.target.value)
     });
+
   }
-  handleResetQuantity(event){
+
+  resetQuantity = event => {
     this.setState({
       quantity: 0
     });
-  }
+  };
 
   render () {
     return (
       <div className="item">
         {this.props.name} price={(this.props.price * this.state.quantity).toFixed(2)}
         <input type='number' className='quantity' value={this.state.quantity}
-          onChange={this.handleUpdateQuantity} />
-          <a href="#" className="itemDelete" onClick={this.handleResetQuantity}>x</a>
+          onChange={this.updateQuantity} />
+          <a href="#" className="itemDelete" onClick={this.resetQuantity}>x</a>
       </div>
     )
   }

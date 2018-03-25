@@ -29,9 +29,11 @@ import trump from '@images/trump.jpg'
 
 class App extends React.Component {
   render() {
-    return (<div>Basket...  <Basket /></div>
-
-  )
+    return (
+      <div>
+      <Basket />
+      </div>
+    )
   }
 }
 

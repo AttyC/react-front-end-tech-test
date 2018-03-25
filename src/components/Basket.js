@@ -31,7 +31,7 @@ class Basket extends React.Component {
       {itemList.map( item =>
         <div>
           <form onSubmit={this.handleSubmit}>
-            <Item name={item.name} quantity={item.quantity} price={item.price * item.quantity}/>
+            <Item name={item.name} quantity={item.quantity} price={(item.price * item.quantity).toFixed(2)}/>
             <input type='number' value={this.state.quantity}
               onChange={this.handleUpdateQuantity} />
           </form>

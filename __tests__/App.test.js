@@ -11,3 +11,8 @@ it('Basket renders without crashing', () => {
   const component = shallow(<Basket />);
   expect(component.exists()).toEqual(true);
 });
+
+it('renders the title', () => {
+  const wrapper = shallow(<Basket />);
+  expect(wrapper.find('h1').text()).toEqual('Say Hi to your Basket... ');
+});

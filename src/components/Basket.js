@@ -27,6 +27,7 @@ class Basket extends React.Component {
 
     return (
       <div className="basket">
+        <h1>Say Hi to your Basket... </h1>
       {itemList.map( item =>
         <div>
           <form onSubmit={this.handleSubmit}>

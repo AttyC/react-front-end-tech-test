@@ -4,7 +4,7 @@
   "description": "A base repository for front-end tests at MMT Digital",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node -r babel-register node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --config config/webpack/webpack.config.js"
   },
   "repository": {
@@ -16,6 +16,7 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/mmtdigital/fe-test",
   "devDependencies": {
+    "@types/enzyme": "^3.1.0",
     "autoprefixer": "^7.1.4",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -30,14 +31,16 @@
     "babel-plugin-transform-react-constant-elements": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.8",
-    "babel-preset-env": "^1.6.0",
+    "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
     "clean-webpack-plugin": "^0.1.16",
     "copy-webpack-plugin": "^4.2.0",
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
     "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.0.2",
     "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.7.0",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
     "friendly-errors-webpack-plugin": "^1.6.1",
@@ -56,8 +59,12 @@
     "webpack-merge": "^4.1.0"
   },
   "dependencies": {
+    "@types/enzyme-adapter-react-16": "^1.0.2",
+    "babel-jest": "^22.4.3",
+    "babel-preset-react": "^6.24.1",
     "express": "^4.16.3",
     "http-server": "^0.10.0",
+    "jest": "^22.4.3",
     "jquery": "^3.2.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"

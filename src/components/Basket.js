@@ -18,18 +18,29 @@ class Basket extends React.Component {
 
 		return (
 			<div className='basket'>
-				<h1>Your Drinks Basket... </h1>
 				<ul>
 					{itemList.map( item =>
-						<li key={item.id}>  <Item
-							name={item.name}
-							price={item.price}
-							quantity={item.quantity}
-						/>
+						<li key={item.id}>
+							<Item
+								name={item.name}
+								price={item.price}
+								quantity={item.quantity}
+							/>
 						</li>
 					)}
 				</ul>
-				<a href='#' className='itemDelete' onClick={this.resetAllQuantities}>Clear all</a>
+				<div className='checkout'>
+
+					<div className='total'>
+						$Total
+					</div>
+					<div className='clear'>
+						<a href='#'>Clear</a>
+					</div>
+					<div className='checkout-button'>
+						<button>Check out ></button>
+					</div>
+					</div>
 			</div>
 		);
 	}

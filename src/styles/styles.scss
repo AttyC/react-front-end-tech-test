@@ -1,17 +1,112 @@
+/* font */
+$font-stack: 'Open Sans', sans-serif;
+$body-font-color: #524f4e;
+$price-font-color: #d9774a;
 
-$font-stack:    'Open Sans', sans-serif;
-$bg-color: #ccc;
-$bg-front: #fff;
-$price-color: #d9774a;
+/* background colour */
+$bg-main-color: #e6e4e3;
+$bg-box-color: #fff;
+$bg-checkout-color: #f5f5f5;
+
+/* container */
+$width: 80%;
+
+/* border */
+$border-color: #cfccc8;
+@mixin flex() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+@mixin auto-center(){
+    margin: {
+      left: auto;
+      right: auto;
+    }
+}
+@mixin border-radius($radius) {
+ -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
 
 body {
   font: 100% $font-stack;
-  color: $bg-color;
+  color: $body-font-color;
+  background: $bg-main-color;
+}
+a {
+  text-decoration: none;
+  color: $body-font-color;
+}
+#root {
+  @include border-radius(5px);
+  @include auto-center();
+  margin-top: 25%;
+  background: $bg-box-color;
+  width: 40%;
+}
+/* list */
+ul {
+  list-style-type: none;
+  padding: 0;
+  li {
+    @include auto-center();
+    width: $width;
+    border-bottom: $border-color 2px dashed;
+  }
+  li:last-child { border: none; }
 }
 
-#root {
-  margin: auto;
-  border: 1px #eee solid;
-  background: $bg-front;
-  width: 40%;
+/* containers */
+
+.basket {
+  @include border-radius(5px);
+  border: $border-color 1px solid;
+}
+.item {
+  @include flex();
+  padding: 20px 0;
+}
+
+input {
+  width: 25px;
+  height: 25px;
+  @include border-radius(5px);
+  border: $border-color 1px solid;
+  text-align: center;
+}
+.sub-total {
+  color: $price-font-color;
+  font-weight: bold;
+}
+.checkout{
+  display: grid;
+  grid-template-columns: 50% 20% 30%;
+  width: $width;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 20px;
+  @include auto-center();
+  button {
+    background-color: #5faed9;
+    color: #fff;
+    width: 100px;
+    font-size: 1.1em;
+  }
 }

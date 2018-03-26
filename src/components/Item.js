@@ -10,6 +10,7 @@ class Item extends React.Component {
 		this._updateQuantity = this._updateQuantity.bind(this);
 		this._resetQuantity = this._resetQuantity.bind(this);
 	}
+
 	_updateQuantity(event){
 		this.setState({
 			quantity: Number(event.target.value),
@@ -26,10 +27,10 @@ class Item extends React.Component {
 	render () {
 		return (
 			<div className="item">
-				<div className='name'>{this.props.name}</div>
-				<div><input type='number' className='quantity' onChange={this._updateQuantity} value={this.state.quantity}/></div>
-				<div className='sub-total'>${(this.props.price * this.state.quantity).toFixed(2)}</div>
-				<div><a href="#" className="itemDelete" onClick={this._resetQuantity}>x</a></div>
+				<span className='name'>{this.props.name}</span>
+				<input type='number' className='quantity' onChange={this._updateQuantity} value={this.state.quantity}/>
+				<span className='sub-total'>${(this.props.price * this.state.quantity).toFixed(2)}</span>
+				<a href="#" className="itemDelete" onClick={this._resetQuantity}>x</a>
 			</div>
 		);
 	}

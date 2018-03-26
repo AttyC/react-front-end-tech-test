@@ -1,12 +1,69 @@
-# MMT Digital Front-end Test
+## What have I acheieved?
 
-Welcome to the MMT Digital Front-end test. This test will hopefully give you a chance to showcase your skills as a developer. The challenge is pretty straightforward - it’s possible to finish this in around two hours. However, we don't mind anything up to 1-2 days (please track how much time you spend working on this).
+* Created Basket and Item components using React
+* Calculate sub-total of each items, based on quantity and price
+* Added user story to enable clearing of each individual item
+* Some unit tests
+* Linted code with eslint
+* CSS styling using SCSS with mixins
+
+#### What did I not include?
+
+I didn't manage to total all values or clear all fields, despite a/ keeping Quantity at Basket level and b/ then trying a different approach, to target the item quantity and price.
+
+#### My approach
+
+I considered using plain JavaScript (Jasmine testing) but decided to use React (Jest/Enzyme testing). This is something of a challenge, due to being new to React and having never used Enzyme, but my feeling is, if something seems hard, give it a go.  
+
+#### How I structured my code
+
+I looked at class responsibilities:
+Basket is responsible for calcluating sub-totals, total and clearing all quantities.
+
+Item is responsible for knowing its state (name and price).  
+
+Despite the above, I moved the sub-total calculations into Item so I could clear individually, rather than at Basket level, as I wasn't able to do both.  
+
+#### What I discovered
+
+I had difficulties with the communication between parent and child components in React, despite extensive research I didn't manage to solve clearing/totalling both individual items and all items.   
+
+I have learned a lot about React and some about Enzyme.  
+
+#### How to run the code
+
+Clone the repository:
+```
+git clone
+```
+Update npm packages: You will need to have [Node.js](https://nodejs.org/en/download/) installed for this
+```
+npm install
+```
+Start the server:
+```
+npm start
+```
+
+Navigate to  [http://localhost:8080/](http://localhost:8080/) to see the app working.
+
+
+
+#### What would I do with more time?   
+I would attempt this in plain JavaScript and write more tests, using Jasmine.  
+
+Tests: I used Enzyme for a couple of tests. I didn't get into mocking methods for testing behaviour, but tested state.
+
+
+#### ----------- The original spec ------------
+
+### MMT Digital Front-end Test
 
 Once you're done and have committed/pushed your implementation, please email me to let me know you're done (`tim.r@mmtdigital.co.uk`). After the test, we'll invite you in to talk through your code and decisions. Alright, let's do this!
 
 ## The challenge
 
-We would like you to re-create the following basket:
+To re-create the following basket:
 
 ![The basket](https://slack-imgs.com/?c=1&url=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F42384%2Fscreenshots%2F668649%2Fattachments%2F59014%2Fcart_update_large.png)
 
@@ -51,6 +108,12 @@ Here are some rough user stories for you to work to:
 **As a** user  
 **I want** to remove all items from my basket  
 **So that** I can start over  
+
+#### >> new story for clearing individual items
+**Given** I am on the basket page  
+**When** I click the "clear" button next to an item
+**Then** the item's quantity is reset to zero (but remain in the basket)
+#### >>
 
 **Given** I am on the basket page  
 **When** I click the "clear" button  

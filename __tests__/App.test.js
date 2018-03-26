@@ -13,12 +13,12 @@ it('Basket renders without crashing', () => {
   expect(component.exists()).toEqual(true);
 });
 
-it('renders the title', () => {
-  const wrapper = shallow(<Basket />);
-  expect(wrapper.find('h1').text()).toEqual('Say Hi to your Basket... ');
+it('renders the clear item link', () => {
+  const wrapper = shallow(<Item />);
+  expect(wrapper.find('.itemClear').text()).toEqual('x');
 });
 
 it('first item in list has expected name', () => {
   const wrapper = shallow(<Item name='Mountain Dew' quantity='1' />);
-  expect(wrapper.find('li').text()).toContain('Mountain Dew');
+  expect(wrapper.find('.name').text()).toContain('Mountain Dew');
 });

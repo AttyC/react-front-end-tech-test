@@ -30,7 +30,7 @@ class Item extends React.Component {
 				<span className='name'>{this.props.name}</span>
 				<input type='number' className='quantity' onChange={this._updateQuantity} value={this.state.quantity}/>
 				<span className='sub-total'>${(this.props.price * this.state.quantity).toFixed(2)}</span>
-				<a href="#" className="itemDelete" onClick={this._resetQuantity}>x</a>
+				<a href="#" className="itemClear" onClick={this._resetQuantity}>x</a>
 			</div>
 		);
 	}

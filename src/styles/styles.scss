@@ -1,3 +1,17 @@
+
+$font-stack:    'Open Sans', sans-serif;
+$bg-color: #ccc;
+$bg-front: #fff;
+$price-color: #d9774a;
+
 body {
-  font-family: sans-serif;
+  font: 100% $font-stack;
+  color: $bg-color;
+}
+
+#root {
+  margin: auto;
+  border: 1px #eee solid;
+  background: $bg-front;
+  width: 40%;
 }

@@ -9,7 +9,7 @@
 
 #### What did I not include?
 
-I didn't manage to total all values or clear all fields, despite a/ keeping Quantity at Basket level and b/ then trying a different approach, to target the item quantity and price.
+I didn't manage to total all values or clear all fields, despite a/ keeping Quantity at Basket level and b/ then trying a different approach, to target the item quantity and price. (I moved onto CSS only when I couldn't progress with React any further).
 
 #### My approach
 
